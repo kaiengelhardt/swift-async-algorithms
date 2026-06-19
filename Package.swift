@@ -34,6 +34,9 @@ let availabilityMacros: [SwiftSetting] = [
 
 let package = Package(
   name: "swift-async-algorithms",
+  platforms: [
+    .watchOS(.v9),
+  ],
   products: [
     .library(name: "AsyncAlgorithms", targets: ["AsyncAlgorithms"]),
     .library(name: "AsyncStreaming", targets: ["AsyncStreaming"]),
